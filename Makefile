@@ -14,6 +14,6 @@ clean:
 	rm -rf public site.tar.gz
 
 serve: clean
-	./serve
+	zola serve --interface 0.0.0.0 --base-url $$(hostname -f)
 
 # end

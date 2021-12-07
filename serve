@@ -1,3 +1,0 @@
-#!/usr/bin/bash
-
-zola serve --interface 0.0.0.0 --base-url "$(hostname -f)"
