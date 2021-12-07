@@ -1,0 +1,18 @@
+$radius-normal: 4px;
+
+// main stylesheet for site-wide styles
+:root {
+    font-family: sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.col {
+    flex-direction: column;
+}

@@ -1,0 +1,24 @@
+# TODO
+
+- [-] main page
+  - [-] html template [`index.html`](./templates/index.html) 
+  - [ ] style
+  - [ ] content
+- [-] post pages
+  - [-] html template [`section.html`](./templates/section.html)
+  - [ ] style
+  - [ ] content
+    - [ ] kant
+      - [ ] post
+      - [ ] comments
+    - [ ] freud
+      - [ ] post
+      - [ ] comments
+    - [ ] shapiro
+      - [ ] post
+      - [ ] comments
+- [-] about page
+  - [-] html template [`page.html`](./templates/section.html)
+  - [ ] style
+  - [ ] content
+- [-] global stylesheet [`style.scss`](./sass/style.scss)
