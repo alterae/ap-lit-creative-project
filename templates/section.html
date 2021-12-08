@@ -5,5 +5,10 @@
   </head>
   <body>
     <!-- TODO: content (the structure is in ur ap euro notebook) -->
+    <h1>{{ section.title }}</h1>
+    <p><strong>About me: </strong>{{ section.description | markdown | safe}}</p>
+
+    <h2>Posts</h2>
+    {% for page in section.pages %} {{ page.content | safe }} {% endfor %}
   </body>
 </html>

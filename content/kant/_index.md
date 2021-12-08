@@ -1,0 +1,4 @@
++++
+title = "kant"
+description = "It is through the synthesis of A) a posteriori centered thesis, or rather, if it behooves oneself, empiricism, and B) an a priori centered antithesis found in such philosophical contexts as the works of many contemporary philosophers living in the enlightenment, mayhaps rationalism would best describe the aforementioned antithesis, which together, from the middle ground that my philosophy lives within, in that, morality is a synthetic a priori concept, which is responsible for the phenomenal world as one would experience it, and that the noumenal world, in which humans are incapable of observation and innate experience the true state of the universe, rules out the separation of empiricism and rationalism. In other words, where A) a posteriori concept is concerned in a school of thought, and where B) an a priori concept is concerned in another school of thought, and as for my philosophy, see AB. Simple."
++++
