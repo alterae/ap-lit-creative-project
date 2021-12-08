@@ -1,6 +1,5 @@
 # The URL the site will be built for
-# TODO: Update once we figure out where we're hosting.
-base_url = "https://example.com"
+base_url = "https://alterae.github.io/ap-lit-creative-project"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
