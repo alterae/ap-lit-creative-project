@@ -4,30 +4,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="flex col">
-      <div class="flex row banner accent-bg shadow">
-        <div class="margin-auto">
+    <div class="font-sans flex flex-col">
+      <div class="flex flex-row">
+        <div class="flex flex-row">
           <!-- logo -->
-          <div class="flex col">
-            <h1 class="display-font">Textual Relations</h1>
-            <h2>Subtitle</h2>
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-bold font-display">Textual Relations</h1>
+            <h2 class="text-xl font-semibold font-serif">Subtitle</h2>
           </div>
         </div>
       </div>
-      <div class="flex row margin-auto gap-l">
-        <div class="flex col shadow half-width">
+      <main class="flex flex-row">
+        <div class="flex flex-col">
           <textarea name="" id="" cols="30" rows="10">
 write a status update...</textarea
           >
         </div>
-        <div class="flex col shadow half-width">
-          <h2>Your Friends</h2>
+        <div class="flex flex-col">
+          <h2 class="text-lg font-semibold">Your Friends</h2>
           {% for path in section.subsections %} {% set subsection =
           get_section(path=path) %}
           <a href="{{ subsection.permalink | safe }}">{{ subsection.title }}</a>
           {% endfor %}
         </div>
-      </div>
+      </main>
     </div>
   </body>
 </html>
