@@ -10,6 +10,7 @@ $accent-color: purple;
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 .flex {
@@ -47,6 +48,10 @@ $accent-color: purple;
   box-shadow: 0 4px 4px #0008;
 }
 
+.shadow-l {
+  box-shadow: 0 4px 8px #0008;
+}
+
 .round-s {
   border-radius: 4px;
 }
@@ -77,4 +82,32 @@ $accent-color: purple;
 
 .display-font {
   font-family: "Pacifico", cursive;
+}
+
+.padding {
+  padding: 8px;
+}
+
+button {
+  border-width: 0;
+  padding: 8px;
+}
+
+button.primary {
+  background-color: $accent-color;
+  color: white;
+}
+
+button.primary:hover {
+  background-color: lighten($color: $accent-color, $amount: 10);
+}
+
+.eighty {
+  max-width: 80ch;
+}
+
+blockquote {
+  padding-left: 1ch;
+  border-left: 2px solid grey;
+  margin-bottom: 8px;
 }

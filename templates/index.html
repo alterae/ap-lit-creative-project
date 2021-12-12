@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Textual Relations</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -10,17 +11,20 @@
           <!-- logo -->
           <div class="flex col">
             <h1 class="display-font">Textual Relations</h1>
-            <h2>Subtitle</h2>
+            <h2>Connect with literature and people</h2>
           </div>
         </div>
       </div>
-      <div class="flex row margin-auto gap-l">
-        <div class="flex col shadow half-width">
-          <textarea name="" id="" cols="30" rows="10">
+      <div class="flex row margin-auto gap-l" style="margin-top: 8px">
+        <div class="flex col shadow-l half-width padding round-m gap-s">
+          <textarea name="" id="" cols="78" rows="15">
 write a status update...</textarea
           >
+          <div class="flex row" style="justify-content: end">
+            <button type="submit" class="primary round-s">Post Update</button>
+          </div>
         </div>
-        <div class="flex col shadow half-width">
+        <div class="flex col shadow-l half-width padding round-m">
           <h2>Your Friends</h2>
           {% for path in section.subsections %} {% set subsection =
           get_section(path=path) %}

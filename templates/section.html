@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- TODO: title, stylesheet(s), meta info -->
+    <title>{{ section.title }} - Textual Relations</title>
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <!-- TODO: content (the structure is in ur ap euro notebook) -->
-    <h1>{{ section.title }}</h1>
-    <p><strong>About me: </strong>{{ section.description | markdown | safe}}</p>
+    <nav class="flex row accent-bg padding">
+      <a href=".." class="display-font accent-bg"><h1>Textual Relations</h1></a>
+    </nav>
+    <div
+      class="flex col margin-auto gap-s padding eighty round-m shadow-l"
+      style="margin-top: 8px"
+    >
+      <h1>{{ section.title }}</h1>
+      <p>
+        <strong>About me: </strong>{{ section.description | markdown | safe}}
+      </p>
 
-    <h2>Posts</h2>
-    {% for page in section.pages %} {{ page.content | safe }} {% endfor %}
+      <h2>Posts</h2>
+      {% for page in section.pages %}
+      <div class="padding shadow round-s" style="border-bottom: 1px solid grey">
+        {{ page.content | safe }} {#
+        <div style="padding-left: 8px; border-left: 2px solid grey">
+          {% for comment in page.extra.comments %} {{ comment }} {% endfor %}
+        </div>
+        #}
+      </div>
+      {% endfor %}
+    </div>
   </body>
 </html>
