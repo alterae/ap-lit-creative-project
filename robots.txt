@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alterae.github.io/ap-lit-creative-project/sitemap.xml
