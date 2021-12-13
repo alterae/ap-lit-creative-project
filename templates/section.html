@@ -12,7 +12,14 @@
       class="flex col margin-auto gap-s padding eighty round-m shadow-l"
       style="margin-top: 8px"
     >
-      <h1>{{ section.title }}</h1>
+      <div class="flex row">
+        <!-- <img
+          style="border-radius: 50%"
+          src="profile.png"
+          alt="profile picture"
+        /> -->
+        <h1>{{ section.title }}</h1>
+      </div>
       <p>
         <strong>About me: </strong>{{ section.description | markdown | safe}}
       </p>
@@ -20,7 +27,7 @@
       <h2>Posts</h2>
       {% for page in section.pages %}
       <div class="padding shadow round-s" style="border-bottom: 1px solid grey">
-        {{ page.content | safe }} {#
+        {{ page.content| safe }} {#
         <div style="padding-left: 8px; border-left: 2px solid grey">
           {% for comment in page.extra.comments %} {{ comment }} {% endfor %}
         </div>
